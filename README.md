@@ -16,12 +16,17 @@ The **Brain Tumor Classification CNN** project focuses on building a Convolution
 
 1. **Data Loading:**
    - The dataset consists of brain tumor MRI images organized into four main classes: Glioma, Meningioma, Pituitary, and No Tumor.
-   - Images are loaded using TensorFlow's `ImageDataGenerator`, which also applies image augmentation techniques like horizontal flipping, zooming, and shearing to avoid overfitting.
+   - Images are loaded using TensorFlow's `ImageDataGenerator`, which also applies image augmentation techniques like horizontal flipping, zooming, and shearing. We use this function to avoid overfitting our model.
 
 2. **Data Preprocessing:**
    - Image data is scaled from pixel values of 0–255 to a normalized range of 0–1 for better model convergence.
    - Duplicate images are removed to ensure data integrity and prevent training biases.
-   - The classes are encoded numerically, and the distribution of the data across each class is visualized using a bar chart.
+   - Each class is encoded numerically, with values 1-4 being applied to varying classes.
+     
+- **Class Distribution Visualization**:
+   - A bar graph is generated to show the distribution of the classes in the training set, ensuring balanced class representation for the model.
+
+<img src="https://github.com/user-attachments/assets/430c054f-c782-400b-aa1d-c2fefc4884f7" width="450" />
 
 3. **Model Architecture:**
    - The model is built using TensorFlow and consists of a convolutional encoder (for feature extraction) followed by fully connected layers that classify the images into one of the four tumor categories.
@@ -40,18 +45,13 @@ The **Brain Tumor Classification CNN** project focuses on building a Convolution
 ---
 
 #### Key Features & Results
-
-- **Data Augmentation**: Applied random transformations such as shear, zoom, and horizontal flip to increase model robustness.
 - **Model Performance**:
    - **Test Accuracy**: ~ 0.8755
    - **Test Precision**: ~ 0.8868
    - **Test Recall**: ~ 0.8667
    - **Test AUC**: ~ 0.9801
 
-- **Class Distribution Visualization**:
-   - A bar graph is generated to show the distribution of the classes in the training set, ensuring balanced class representation for the model.
 
-<img src="https://github.com/user-attachments/assets/430c054f-c782-400b-aa1d-c2fefc4884f7" width="450" />
 
 ---
 
@@ -66,8 +66,8 @@ The **Brain Tumor Classification CNN** project focuses on building a Convolution
 
 #### Future Improvements
 
-- **Hyperparameter Tuning**: Implementing techniques such as grid search to optimize model parameters.
-- **Transfer Learning**: Leveraging pre-trained models (e.g., VGG16 or ResNet) to enhance model performance on smaller datasets.
+- **Hyperparameter Tuning**: Though our model performed very well for a CNN, we could always play with more epochs & a smaller batch size to improve accuracy.
+- **Autoencoder**: Instead of feeding our model the compressed version of our images, we could use an autoencoder to create a cleaner new dataset of "fully-encoded images"
 - **Deployment**: Packaging the model into a web application or a standalone tool for easy access by healthcare professionals.
 
 ---
