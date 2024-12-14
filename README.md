@@ -51,8 +51,9 @@ The **Brain Tumor Classification CNN** project focuses on building a Convolution
 - **Class Distribution Visualization**:
    - A bar graph is generated to show the distribution of the classes in the training set, ensuring balanced class representation for the model.
 
-![Class Distribution](<img width="644" alt="Screenshot 2024-12-14 at 5 00 58 PM" src="https://github.com/user-attachments/assets/430c054f-c782-400b-aa1d-c2fefc4884f7" />
-)
+![Class Distribution](<img width="644" alt="Screenshot 2024-12-14 at 5 00 58 PM" src="https://github.com/user-attachments/assets/430c054f-c782-400b-aa1d-c2fefc4884f7" />)
+
+<img src="https://github.com/user-attachments/assets/430c054f-c782-400b-aa1d-c2fefc4884f7" width="300" />
 
 ---
 
