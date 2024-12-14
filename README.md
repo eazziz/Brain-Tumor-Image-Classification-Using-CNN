@@ -12,6 +12,7 @@ This project uses a Convolutional Neural Network (CNN) to classify brain MRI ima
 ## Project Flow
 
 1. **Data Loading**:
+   
    -The dataset consists of brain tumor MRI images organized into four main classes: Glioma, Meningioma, Pituitary, and No Tumor.
    
    -Images are loaded using TensorFlow's ImageDataGenerator, which also applies image augmentation techniques like horizontal flipping, zooming, and shearing to avoid overfitting.
