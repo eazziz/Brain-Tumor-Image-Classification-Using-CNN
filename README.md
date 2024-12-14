@@ -13,16 +13,17 @@ This project uses a Convolutional Neural Network (CNN) to classify brain MRI ima
 
 1. **Data Loading**:
    -The dataset consists of brain tumor MRI images organized into four main classes: Glioma, Meningioma, Pituitary, and No Tumor.
+   
    -Images are loaded using TensorFlow's ImageDataGenerator, which also applies image augmentation techniques like horizontal flipping, zooming, and shearing to avoid overfitting.
 
 
-2. **Data Preprocessing**:
+3. **Data Preprocessing**:
    -Image data is scaled from pixel values of 0–255 to a normalized range of 0–1 for better model convergencee.
    -Duplicate images are removed to ensure data integrity and prevent training biases.
    -The classes are encoded numerically, and the distribution of the data across each class is visualized using a bar chart.
 
    
-3. **Model Architecture:**:
+4. **Model Architecture:**:
    The model is built using TensorFlow and consists of a convolutional encoder (for feature extraction) followed by fully connected layers that classify the images into one of the four tumor categories.
 The model uses categorical cross-entropy as the loss function and softmax activation in the output layer for multi-class classification.  
    <img width="997" alt="age_graph" src="https://github.com/user-attachments/assets/680d1914-9ef1-4c6c-b275-44bb1df19514">
