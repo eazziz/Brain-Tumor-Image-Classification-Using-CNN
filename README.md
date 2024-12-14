@@ -18,6 +18,7 @@ This project uses a Convolutional Neural Network (CNN) to classify brain MRI ima
    -Images are loaded using TensorFlow's ImageDataGenerator, which also applies image augmentation techniques like horizontal flipping, zooming, and shearing to avoid overfitting.
 
 
+
 3. **Data Preprocessing**:
    -Image data is scaled from pixel values of 0–255 to a normalized range of 0–1 for better model convergencee.
    -Duplicate images are removed to ensure data integrity and prevent training biases.
