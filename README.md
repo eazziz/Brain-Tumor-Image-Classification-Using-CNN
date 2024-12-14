@@ -43,10 +43,10 @@ The **Brain Tumor Classification CNN** project focuses on building a Convolution
 
 - **Data Augmentation**: Applied random transformations such as shear, zoom, and horizontal flip to increase model robustness.
 - **Model Performance**:
-   - **Test Accuracy**: ~[accuracy score]
-   - **Test Precision**: ~[precision score]
-   - **Test Recall**: ~[recall score]
-   - **Test AUC**: ~[AUC score]
+   - **Test Accuracy**: ~ 0.8755
+   - **Test Precision**: ~ 0.8868
+   - **Test Recall**: ~ 0.8667
+   - **Test AUC**: ~ 0.9801
 
 - **Class Distribution Visualization**:
    - A bar graph is generated to show the distribution of the classes in the training set, ensuring balanced class representation for the model.
